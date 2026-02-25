@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root {
-  --bg: #050b14;
-  --bg-soft: #0c1a2a;
-  --surface: rgba(14, 28, 45, 0.72);
-  --surface-solid: #10263e;
-  --accent: #14b8a6;
-  --accent-2: #22d3ee;
-  --text: #eef9ff;
-  --muted: #9bb8cc;
-  --line: rgba(148, 191, 219, 0.24);
-  --shadow: 0 20px 50px rgba(2, 6, 13, 0.6);
+  --bg: #f4fbff;
+  --bg-soft: #eaf7ff;
+  --surface: rgba(255, 255, 255, 0.86);
+  --surface-solid: #ffffff;
+  --accent: #ff8c42;
+  --accent-2: #ffd166;
+  --text: #183247;
+  --muted: #4f7089;
+  --line: rgba(106, 158, 196, 0.34);
+  --shadow: 0 18px 42px rgba(42, 93, 131, 0.18);
   --radius: 18px;
 }
 
@@ -28,7 +28,9 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   color: var(--text);
   background:
-    linear-gradient(rgba(5, 11, 20, 0.74), rgba(5, 11, 20, 0.82)),
+    radial-gradient(circle at 14% 12%, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0) 35%),
+    radial-gradient(circle at 88% 16%, rgba(255, 209, 102, 0.5), rgba(255, 209, 102, 0) 34%),
+    linear-gradient(132deg, rgba(228, 246, 255, 0.94), rgba(255, 244, 214, 0.9)),
     url('./wallpaper.webp') center / cover no-repeat fixed;
   min-height: 100vh;
   padding-bottom: 96px;
@@ -50,6 +52,8 @@ body {
   top: 0;
   z-index: 30;
   backdrop-filter: blur(8px);
+  background: rgba(246, 252, 255, 0.72);
+  border-bottom: 1px solid rgba(106, 158, 196, 0.2);
 }
 
 .brand {
@@ -74,7 +78,7 @@ body {
 .lang-switch {
   display: inline-flex;
   border: 1px solid var(--line);
-  background: rgba(5, 11, 20, 0.55);
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 999px;
   padding: 0.18rem;
 }
@@ -91,7 +95,7 @@ body {
 }
 
 .lang-switch button.active {
-  color: #00231f;
+  color: #4b2600;
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
   font-weight: 700;
 }
@@ -107,7 +111,7 @@ body {
   color: var(--muted);
   text-decoration: none;
   border: 1px solid var(--line);
-  background: rgba(9, 18, 31, 0.75);
+  background: rgba(255, 255, 255, 0.88);
   border-radius: 12px;
   text-align: center;
   padding: 0.58rem 0.4rem;
@@ -116,9 +120,9 @@ body {
 
 .main-nav a:hover,
 .main-nav a.active {
-  color: var(--text);
-  border-color: rgba(20, 184, 166, 0.7);
-  background: rgba(20, 184, 166, 0.12);
+  color: #3e2300;
+  border-color: rgba(255, 140, 66, 0.65);
+  background: rgba(255, 209, 102, 0.26);
 }
 
 .hero {
@@ -127,7 +131,7 @@ body {
   box-shadow: var(--shadow);
   padding: clamp(1rem, 2.2vw, 1.8rem);
   background:
-    linear-gradient(145deg, rgba(13, 30, 48, 0.94), rgba(7, 18, 32, 0.92));
+    linear-gradient(140deg, rgba(255, 255, 255, 0.95), rgba(246, 252, 255, 0.9));
   display: grid;
   grid-template-columns: 1.15fr 1fr;
   gap: 1.2rem;
@@ -156,10 +160,10 @@ body {
 .kpi {
   border: 1px solid var(--line);
   border-radius: 999px;
-  color: #bde7f7;
+  color: #225171;
   padding: 0.3rem 0.78rem;
   font-size: 0.75rem;
-  background: rgba(7, 17, 29, 0.7);
+  background: rgba(255, 255, 255, 0.82);
   letter-spacing: 0.02em;
 }
 
@@ -182,14 +186,14 @@ body {
 }
 
 .btn-main {
-  color: #06211f;
+  color: #4b2600;
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
 }
 
 .btn-ghost {
   color: var(--text);
   border: 1px solid var(--line);
-  background: rgba(5, 11, 20, 0.5);
+  background: rgba(255, 255, 255, 0.82);
 }
 
 .hero-media {
@@ -197,7 +201,7 @@ body {
   border-radius: 16px;
   overflow: hidden;
   min-height: 280px;
-  background: #081220;
+  background: #edf8ff;
 }
 
 .hero-media img {
@@ -224,7 +228,7 @@ body {
 
 .card {
   border: 1px solid var(--line);
-  background: rgba(11, 24, 40, 0.74);
+  background: rgba(255, 255, 255, 0.9);
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -256,7 +260,7 @@ body {
 
 .footer-note {
   margin-top: 1rem;
-  color: #8eafc6;
+  color: #5b7890;
   text-align: center;
   font-size: 0.82rem;
   white-space: pre-line;
@@ -267,7 +271,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(5, 11, 20, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   border-top: 1px solid var(--line);
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -276,15 +280,15 @@ body {
 
 .bottom-dock a {
   text-decoration: none;
-  color: #94b7cb;
+  color: #51728b;
   text-align: center;
   padding: 0.55rem 0.25rem 0.6rem;
   font-size: 0.72rem;
 }
 
 .bottom-dock a.active {
-  color: #d8f8f1;
-  background: rgba(20, 184, 166, 0.12);
+  color: #4b2600;
+  background: rgba(255, 209, 102, 0.3);
 }
 
 .bottom-dock i {
