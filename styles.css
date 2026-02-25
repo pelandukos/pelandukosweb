@@ -28,9 +28,8 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 12% 10%, rgba(20, 184, 166, 0.24), transparent 28%),
-    radial-gradient(circle at 85% 20%, rgba(34, 211, 238, 0.16), transparent 26%),
-    linear-gradient(160deg, var(--bg), #081323 58%, #091a2d 100%);
+    linear-gradient(rgba(5, 11, 20, 0.74), rgba(5, 11, 20, 0.82)),
+    url('./wallpaper.webp') center / cover no-repeat fixed;
   min-height: 100vh;
   padding-bottom: 96px;
 }
