@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640" role="img" aria-label="TuneOffice logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1f9d8a"/>
+      <stop offset="100%" stop-color="#2456d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="640" rx="112" fill="url(#g)"/>
+  <path d="M170 150h300c33 0 60 27 60 60v220c0 33-27 60-60 60H170c-33 0-60-27-60-60V210c0-33 27-60 60-60z" fill="#fff" opacity=".94"/>
+  <path d="M190 225h260v58H350v182h-60V283H190v-58z" fill="#183247"/>
+  <path d="M190 340h68v62h-68v-62zm192 0h68v62h-68v-62z" fill="#1f9d8a"/>
+</svg>

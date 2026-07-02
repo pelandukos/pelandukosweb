@@ -28,10 +28,8 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 14% 12%, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0) 35%),
-    radial-gradient(circle at 88% 16%, rgba(255, 209, 102, 0.5), rgba(255, 209, 102, 0) 34%),
-    linear-gradient(132deg, rgba(228, 246, 255, 0.94), rgba(255, 244, 214, 0.9)),
-    url('./wallpaper.webp') center / cover no-repeat fixed;
+    linear-gradient(rgba(244, 251, 255, 0.72), rgba(244, 251, 255, 0.72)),
+    url('./assets/images/bg.png') center / cover no-repeat fixed;
   min-height: 100vh;
   padding-bottom: 96px;
 }
