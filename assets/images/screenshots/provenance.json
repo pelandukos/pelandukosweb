@@ -1,0 +1,16 @@
+{
+  "captured_on": "2026-10-21",
+  "iso": "PelandukOS-3.5-live-matched-amd64.iso",
+  "iso_sha256": "ffa8988240c1a370461d9f49ac8064052770478cca936e52cd0d08cbb6464533",
+  "method": "QEMU UEFI preview launched with PelandukOS ISO Builder services.qemu.qemu_arguments; QMP screendump; WebP quality 88",
+  "resolution": [
+    1280,
+    800
+  ],
+  "images": {
+    "desktop.webp": "GNOME live desktop",
+    "software.webp": "Native PelandukOS Software application, featured catalog",
+    "installer.webp": "Installer installation-type step: Server with XFCE selected"
+  },
+  "note": "Real VM captures. No desktop or application UI was generated or composited. Public v2 download is a separate, earlier release."
+}
