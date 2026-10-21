@@ -31,8 +31,9 @@ input:focus-visible {
   padding-bottom: 0;
 }
 .landing .shell {
-  max-width: 1440px;
-  padding: 0 clamp(20px, 5vw, 80px);
+  width: 100%;
+  max-width: none;
+  padding: 0 clamp(16px, 2vw, 32px);
 }
 .topbar {
   background: #f7f7f2ed;
@@ -1272,5 +1273,35 @@ body:not(.landing) .brand img {
   }
   .explore-strip {
     gap: 17px;
+  }
+}
+
+/* Keep the shop visible while allowing navigation to wrap on small screens. */
+.merch-link,
+.landing .header-nav .merch-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 24px;
+  background: #f47722;
+  color: #172537;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.merch-link:hover,
+.landing .header-nav .merch-link:hover {
+  background: #ff944d;
+  color: #172537;
+}
+@media (max-width: 1050px) {
+  .landing .topbar { flex-wrap: wrap; }
+  .landing .header-nav {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
