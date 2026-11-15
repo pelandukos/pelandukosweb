@@ -1,7 +1,12 @@
 .sponsor-content {
-  max-width: 1040px;
+  width: 100%;
   margin: 0 auto;
   padding: 64px 0 80px;
+}
+.sponsor-content > :not(.repository-section) {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .sponsor-heading { margin-bottom: 48px; }
 .sponsor-heading h1 {
@@ -48,18 +53,22 @@
 .sponsor-list { list-style: none; padding: 0; margin: 0; }
 .mirror-table {
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   text-align: left;
   font-size: 15px;
 }
 .mirror-table th,
 .mirror-table td {
-  padding: 18px 16px;
+  padding: 24px clamp(16px, 3vw, 48px);
   border-bottom: 1px solid var(--line);
   vertical-align: top;
   overflow-wrap: anywhere;
 }
 .mirror-table thead { background: #f5f5f7; }
+.mirror-table th:nth-child(1) { width: 25%; }
+.mirror-table th:nth-child(2) { width: 50%; }
+.mirror-table th:nth-child(3) { width: 25%; }
 .mirror-table a { text-underline-offset: 3px; }
 .mirror-table a:hover { color: #c64a05; }
 .sponsor-page .header-nav a[aria-current="page"] {
